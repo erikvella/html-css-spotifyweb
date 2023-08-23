@@ -20,6 +20,15 @@
   display: flex;
 }
 
+.margin{
+  margin: 20px;
+}
+
+.t-center{
+  text-align: center;
+}
+
+
 /* stili generali degli elementi */
 
 body{
@@ -56,7 +65,7 @@ body{
 .main-container{
 height: 100%;
 width: calc(100vw - 225px);
-overflow: scroll;
+overflow-y:auto;
 }
 
 .foot-side{
@@ -91,7 +100,7 @@ overflow: scroll;
   width: 100%;
   min-height: 200px;
   height: calc(100% - 300px);
-  overflow:auto;
+  overflow-y:auto;
 }
 
 /* stili relativi alla parte centrale nel dettaglio */
@@ -110,8 +119,43 @@ overflow: scroll;
   width: 100%;
   margin-top: 90px;
   height: 50px;
+  
 }
 
 .main-wrap{
   flex-direction: column;
+}
+
+
+.recently{
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.box
+{
+  width: 15%;
+  aspect-ratio: 1;
+  min-width: 100px;
+}
+
+.border-radius{
+  border-radius: 50%;
+}
+
+
+/* stili relativi al menu */
+
+.menu2{
+list-style: none;
+align-items: center;
+flex-wrap: wrap;
+gap: 20px;
+
+}
+.menu2 li a{
+   text-decoration: none;
+   color: black;
+   
 }
