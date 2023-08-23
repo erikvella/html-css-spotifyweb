@@ -101,6 +101,7 @@ overflow: scroll;
   width: 100%;
   position: fixed;
   top: 0;
+  z-index: 999;
   background-color: rgba(0, 0, 0, .4);
 
 }
@@ -109,4 +110,8 @@ overflow: scroll;
   width: 100%;
   margin-top: 90px;
   height: 50px;
+}
+
+.main-wrap{
+  flex-direction: column;
 }
