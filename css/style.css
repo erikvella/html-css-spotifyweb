@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: rgb(72, 72, 72);
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans', sans-serif;
 }
 
 .debug{
@@ -114,11 +118,28 @@ overflow-y:auto;
   background-color: rgba(0, 0, 0, .4);
 
 }
+.btn{
+  
+}
+
+.btn a{
+  padding: 10px 50px;
+  border: 2px white solid;
+  border-radius: 30px;
+text-decoration: none;
+color: white;
+
+margin-top: 20px;
+
+
+}
 
 .main-menu{
-  width: 100%;
-  margin-top: 90px;
+  width: 50%;
+  
   height: 50px;
+  margin: auto;
+  margin-top: 90px;
   
 }
 
@@ -147,15 +168,28 @@ overflow-y:auto;
 
 /* stili relativi al menu */
 
+
+
+
 .menu2{
 list-style: none;
-align-items: center;
+justify-content: space-between;
 flex-wrap: wrap;
-gap: 20px;
+
 
 }
 .menu2 li a{
    text-decoration: none;
    color: black;
-   
+   font-size: 0.8rem;
+}
+
+ul li a{
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+.menu1 li a{
+  margin-left: 10px;
 }
