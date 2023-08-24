@@ -44,6 +44,7 @@ body{
 
 .content{
   height: calc(100vh - 90px);
+  overflow: hidden;
 }
 
 
@@ -80,23 +81,31 @@ overflow-y:auto;
 
 
 .logo{
-  height: 60px;
+  padding: 10px;
   width: 100%;
 }
 
 .side-menu{
-  height: 150px;
+  
   width: 100%;
 }
+
+.library{
+  width: 16px;
+  height: auto;
+
+}
+
+
 .crea-playlist{
-  height: 90px;
+  
   width: 100%;
 }
 
 .lista-playlist{
   width: 100%;
   min-height: 200px;
-  height: calc(100% - 300px);
+  height: calc(100% - 90px);
   overflow-y:auto;
 }
 
@@ -111,9 +120,7 @@ overflow-y:auto;
   background-color: rgba(0, 0, 0, .4);
 
 }
-.btn{
-  
-}
+
 
 .btn a{
   padding: 10px 50px;
