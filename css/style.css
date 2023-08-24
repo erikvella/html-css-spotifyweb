@@ -41,13 +41,6 @@ body{
   position: relative;
 }
 
-.player{
-   height: 90px;
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   background-color: rgb(209, 159, 255);
-}
 
 .content{
   height: calc(100vh - 90px);
@@ -134,14 +127,6 @@ margin-top: 20px;
 
 }
 
-.main-menu{
-  width: 50%;
-  
-  height: 50px;
-  margin: auto;
-  margin-top: 90px;
-  
-}
 
 .main-wrap{
   flex-direction: column;
@@ -168,6 +153,14 @@ margin-top: 20px;
 
 /* stili relativi al menu */
 
+.main-menu{
+  width: 100%;
+ 
+  height: 50px;
+  margin: auto;
+  margin-top: 90px;
+  
+}
 
 
 
@@ -175,13 +168,17 @@ margin-top: 20px;
 list-style: none;
 justify-content: space-between;
 flex-wrap: wrap;
+}
 
-
+.menu2 li{
+  justify-content: center;
+  align-items: center;
 }
 .menu2 li a{
    text-decoration: none;
    color: black;
-   font-size: 0.8rem;
+   font-size: 1rem;
+   text-align: center;
 }
 
 ul li a{
@@ -191,5 +188,34 @@ ul li a{
 }
 
 .menu1 li a{
-  margin-left: 10px;
+  
+}
+
+
+
+
+
+
+
+
+/* stili relativi al "player" in basso */
+
+.player{
+  height: 90px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(209, 159, 255);
+  justify-content: space-between;
+}
+
+
+.player-song , .player-controls , .player-volume{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-controls{
+  width: 40%;
 }
