@@ -166,7 +166,8 @@ margin-top: 20px;
 
 .menu2{
 list-style: none;
-justify-content: space-between;
+justify-content: center;
+
 flex-wrap: wrap;
 }
 
@@ -184,7 +185,7 @@ flex-wrap: wrap;
 ul li a{
   list-style: none;
   text-decoration: none;
-  
+  padding-top: 60px;
 }
 
 .menu1 li a{
