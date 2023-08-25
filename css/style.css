@@ -47,7 +47,9 @@ body{
   overflow: hidden;
 }
 
-
+h2 , h3 , p{
+   margin: 20px;
+}
 
 /* stili reliativi alla colonna di sx  */
 
@@ -91,9 +93,12 @@ overflow-y:auto;
 }
 
 .library{
-  width: 16px;
+  width: 30px;
   height: auto;
-
+  margin-left: 20px;
+  vertical-align: middle;
+  
+  
 }
 
 
@@ -101,14 +106,50 @@ overflow-y:auto;
   
   width: 100%;
 }
-
+.fa-plus{
+  padding: 15px;
+  background-color: rgb(210, 210, 210);
+  color: black;
+}
 .lista-playlist{
   width: 100%;
   min-height: 200px;
   height: calc(100% - 90px);
   overflow-y:auto;
 }
+.lista-playlist ul li{
+  padding: 20px;
+}
 
+
+.installa-app{
+  border-bottom: 1px solid grey;
+}
+
+.installa-app a , i{
+  text-decoration: none;
+  color: rgb(193, 193, 193);
+  padding: 10px;
+}
+
+.user{
+  padding: 10px;
+ 
+}
+
+
+.user-img{
+  width: 30px;
+  height: 30px;
+  background-color: rgb(98, 96, 96);
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.user-name{
+  font-size: 1.5rem;
+  color: white;
+}
 /* stili relativi alla parte centrale nel dettaglio */
 
 .top-bar{
@@ -118,7 +159,7 @@ overflow-y:auto;
   top: 0;
   z-index: 999;
   background-color: rgba(0, 0, 0, .4);
-
+  
 }
 
 
@@ -130,8 +171,6 @@ text-decoration: none;
 color: white;
 
 margin-top: 20px;
-
-
 }
 
 
@@ -146,8 +185,7 @@ margin-top: 20px;
   width: 100%;
 }
 
-.box
-{
+.box{
   width: 15%;
   aspect-ratio: 1;
   min-width: 100px;
@@ -164,7 +202,7 @@ margin-top: 20px;
   width: 100%;
  
   
-  margin: auto;
+ 
   margin-top: 90px;
   
 }
@@ -196,14 +234,18 @@ flex-wrap: wrap;
 ul li a{
   list-style: none;
   text-decoration: none;
-  
+ 
 }
 
 .menu1 li a{
   padding: 10px;
 }
 
+.crea-playlist{
+  margin: 20px;
+  width: fit-content;
 
+}
 
 
 
