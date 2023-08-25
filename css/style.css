@@ -58,7 +58,7 @@ body{
 h2 , h3 , p{
    margin: 20px;
 }
-h3, h2 , h4{
+h3, h2 , h4 , h5{
   color: white;
 }
 /* stili reliativi alla colonna di sx  */
@@ -198,17 +198,26 @@ color: white;
   justify-content: space-around;
   width: 100%;
 }
-.card{
+
+.box{
+  overflow: hidden;
+}
+.card , .card2{
   width: 15%;
 }
 
+.card2{
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 
-.album{
+.album , .artist{
   width: 100%;
   aspect-ratio: 1;
   
 }
+
 
 /* stili relativi al menu */
 
@@ -275,12 +284,23 @@ ul li a{
 }
 
 
+.song-box{
+  width: 20%;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+}
+
 .player-song , .player-controls , .player-volume{
   height: 100%;
   align-items: center;
   justify-content: center;
 }
-
+.player-song , .player-volume{
+  width: 230px;
+  position: relative;
+  justify-content: flex-end;
+}
 .player-controls{
   width: 40%;
 }
