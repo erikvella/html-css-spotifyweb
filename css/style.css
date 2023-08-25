@@ -124,7 +124,7 @@ overflow-y:auto;
 .lista-playlist{
   width: 100%;
   min-height: 200px;
-  height: calc(100% - 90px);
+  height: calc(100% - 330px);
   overflow-y:auto;
 }
 .lista-playlist ul li{
@@ -286,7 +286,7 @@ ul li a{
 
 .song-box{
   width: 20%;
-  position: absolute;
+  
   top: 20px;
   left: 5px;
 }
@@ -298,8 +298,7 @@ ul li a{
 }
 .player-song , .player-volume{
   width: 230px;
-  position: relative;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 .player-controls{
   width: 40%;
