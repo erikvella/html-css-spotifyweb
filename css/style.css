@@ -2,22 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: rgb(72, 72, 72);
+  color: rgb(159, 159, 159);
   font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'PT Sans', sans-serif;
 }
 
 .debug{
-  background-color: rgb(255, 171, 161);
+  background-color: rgb(20, 20, 20);
   border: 1px solid red;
 }
 
 .debug2{
-  background-color: aquamarine;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(91, 87, 115);
+  border: 1px solid rgb(206, 253, 15);
 }
 
+
+.debug3{
+    background-color: rgb(178, 172, 172);
+    border: 1px solid rgb(0, 255, 94);
+}
 /* utility */
 
 .flex{
@@ -50,7 +55,9 @@ body{
 h2 , h3 , p{
    margin: 20px;
 }
-
+h3, h2 , h4{
+  color: white;
+}
 /* stili reliativi alla colonna di sx  */
 
 
@@ -73,7 +80,7 @@ overflow-y:auto;
    width: 100%;
    position: absolute;
    bottom: 0;
-   background-color: rgb(97, 30, 161);
+   
 }
 
 .main-side{
@@ -93,11 +100,11 @@ overflow-y:auto;
 }
 
 .library{
-  width: 30px;
+  width: 50px;
   height: auto;
-  margin-left: 20px;
+  padding-left: 20px;
   vertical-align: middle;
-  
+  border-left: 3px solid rgb(146, 248, 2);
   
 }
 
@@ -158,19 +165,23 @@ overflow-y:auto;
   position: fixed;
   top: 0;
   z-index: 999;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .6);
   
 }
 
-
+.btn{
+  text-align: right;
+  margin-right: 250px;
+  margin-top: 30px;
+}
 .btn a{
   padding: 10px 50px;
   border: 2px white solid;
   border-radius: 30px;
 text-decoration: none;
 color: white;
+  
 
-margin-top: 20px;
 }
 
 
@@ -195,14 +206,14 @@ margin-top: 20px;
   border-radius: 50%;
 }
 
+.album{
+  height: 100%;
+}
 
 /* stili relativi al menu */
 
 .main-menu{
   width: 100%;
- 
-  
- 
   margin-top: 90px;
   
 }
@@ -225,7 +236,7 @@ flex-wrap: wrap;
 }
 .menu2 li a{
    text-decoration: none;
-   color: black;
+   color: rgb(159, 159, 159);
    font-size: 1rem;
    text-align: center;
   
@@ -237,8 +248,8 @@ ul li a{
  
 }
 
-.menu1 li a{
-  padding: 10px;
+.menu1 li{
+  margin-top: 10px;
 }
 
 .crea-playlist{
@@ -259,7 +270,7 @@ ul li a{
   width: 100%;
   position: absolute;
   bottom: 0;
-  background-color: rgb(209, 159, 255);
+  
   justify-content: space-between;
 }
 
