@@ -36,6 +36,9 @@ font-family: 'PT Sans', sans-serif;
 .t-center{
   text-align: center;
 }
+.border-radius{
+  border-radius: 50%;
+}
 
 
 /* stili generali degli elementi */
@@ -195,19 +198,16 @@ color: white;
   justify-content: space-around;
   width: 100%;
 }
-
-.box{
+.card{
   width: 15%;
-  aspect-ratio: 1;
-  min-width: 100px;
 }
 
-.border-radius{
-  border-radius: 50%;
-}
+
 
 .album{
-  height: 100%;
+  width: 100%;
+  aspect-ratio: 1;
+  
 }
 
 /* stili relativi al menu */
