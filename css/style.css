@@ -20,7 +20,7 @@ font-family: 'PT Sans', sans-serif;
 
 
 .debug3{
-    background-color: rgb(178, 172, 172);
+    background-color: rgb(209, 72, 72);
     border: 1px solid rgb(0, 255, 94);
 }
 /* utility */
@@ -38,6 +38,12 @@ font-family: 'PT Sans', sans-serif;
 }
 .border-radius{
   border-radius: 50%;
+}
+
+#active{
+  border-left: 3px solid rgb(146, 248, 2);
+  color: white;
+  opacity: 1;
 }
 
 
@@ -96,18 +102,23 @@ overflow-y:auto;
   padding: 10px;
   width: 100%;
 }
-
+.logo-mobile{
+  display: none;
+}
 .side-menu{
   
   width: 100%;
 }
 
+.side-menu-mobile{
+  display: none;
+}
 .library{
   width: 50px;
   height: auto;
   padding-left: 20px;
   vertical-align: middle;
-  border-left: 3px solid rgb(146, 248, 2);
+  opacity: .8;
   
 }
 
@@ -135,7 +146,9 @@ overflow-y:auto;
 .installa-app{
   border-bottom: 1px solid grey;
 }
-
+.installa-app-mobile{
+  display: none;
+}
 .installa-app a , i{
   text-decoration: none;
   color: rgb(193, 193, 193);
@@ -146,7 +159,9 @@ overflow-y:auto;
   padding: 10px;
  
 }
-
+.user-mobile{
+  display: block;
+}
 
 .user-img{
   width: 30px;
@@ -174,7 +189,7 @@ overflow-y:auto;
 
 .btn{
   text-align: right;
-  margin-right: 250px;
+  margin-right: 300px;
   margin-top: 30px;
 }
 .btn a{
@@ -303,10 +318,77 @@ ul li a{
 .player-controls{
   width: 40%;
 }
+.options{
+  justify-content: space-around;
+}
+.options li{
+  text-decoration: none;
+  list-style: none;
+  margin: 10px;
+  
+}
+
+.timeline{
+  justify-content: space-around;
+}
+.line{
+  width: 80%;
+  border: 3px solid rgb(176, 176, 176);
+  height: 1px;
+}
+.vo li{
+  text-decoration: none;
+  list-style: none;
+  
+  
+}
+.volume{
+  border: 3px solid rgb(176, 176, 176);
+  height: 1px;
+  width: 100px;
+  margin-right: 20px;
+}
 
 
 
+/* qui vado a gestire gli effetti hover */
 
+a:hover{
+  color: white;
+} 
+
+li:hover{
+  color: white;
+}
+
+.btn a:hover{
+  padding: 20px 60px;
+  border: 2px white solid;
+  border-radius: 30px;
+text-decoration: none;
+color: white;
+}
+
+.menu2 li a:hover{
+  color: white;
+}
+
+.fa-regular:hover{
+  color: white;
+}
+
+.fa-solid:hover{
+  color: white;
+}
+
+.fa-plus:hover{
+  color: black;
+  background-color: white;
+}
+
+.crea:hover{
+  color: white;
+}
 
 
 /* da qui iniziano le media query */
@@ -322,5 +404,33 @@ ul li a{
   .main-container{
     width: calc(100% - 50px);
   }
+
+  .logo-mobile{
+    display: block;
+  }
+  .logo-desktop{
+    display: none;
+  }
+  .side-menu{
+    display: none;
+  }
+  .side-menu-mobile , .installa-app-mobile , .user-mobile{
+    display: block;
+  }
+  .menu1 li .library{
+    width: 50px;
+    height: auto;
+    border-left: 3px solid rgb(146, 248, 2);
+    padding: 10px;
+  }
+
+  h3 , .lista-playlist , .creation-playlist , .installa-app , .user , .logo{
+    display: none;
+  }
+
+.user-img{
+  margin-left: 5px;
+}
+
   
 }

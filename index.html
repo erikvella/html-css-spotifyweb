@@ -26,13 +26,20 @@
         <!-- qui inizia il menu di sinistra -->
           
               <div class="logo  debug">
-                <img src="img/logo.svg" alt="">
+                <img class="logo-desktop" src="img/logo.svg" alt="">
               </div>
+
+              <div class="logo-mobile">
+                <img src="img/logo-small.svg" alt="">
+              </div>
+              
+
+
 
               <div class="side-menu debug">
                    <nav>
                     <ul class="menu1 debug">
-                      <li>
+                      <li id="active">
                         <img class="library" src="img/home.svg" alt="">
                         <a href="#">Home</a>
                       </li>
@@ -47,20 +54,39 @@
                     </ul>
                    </nav>
               </div>
+<!-- versione mobile del menu1 -->
+              <div class="side-menu-mobile debug">
+                <nav>
+                 <ul class="menu1 debug">
+                   <li>
+                     <img class="library" src="img/home.svg" alt="">
+            
+                   </li>
+                   <li>
+                     <img class="library" src="img/search.svg" alt="">
+                     
+                   </li>
+                   <li>
+                     <img class="library" src="img/libreria.svg" alt="">
+                     
+                   </li>
+                 </ul>
+                </nav>
+           </div>
 
               <h3>PLAYLIST</h3>
               <div class="crea-playlist debug">
-                <div>
-                  <span>
+                <div class="creation-playlist">
+                  
                     <i class="fa-solid fa-plus"></i>
-                    Crea Playlist</span>
+                    <span class="crea">Crea Playlist</span>
                 </div>
                 
               </div>
 
               <div class="lista-playlist debug">
                
-                   <ul>
+                   <ul class="new-playlist">
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -102,12 +128,23 @@
             <i class="fa-regular fa-circle-down"></i>
             Installa App</a>
         </div>
+
+
+        <div class="installa-app-mobile">
+          <a href="#">
+            <i class="fa-regular fa-circle-down"></i></a>
+        </div>
         
         
         <div class="user">
           <img class="user-img" src="img/profile.svg" alt="">
           <span class="user-name">Jhon Doe</span>
       </div>
+
+      <div class="user-mobile">
+        <img class="user-img" src="img/profile.svg" alt="">
+        
+    </div>
 
 
 
@@ -335,11 +372,57 @@
         
         
         
-        <div class="player-controls flex debug3">controls</div>
+        <div class="player-controls debug3">
+           <div>
+            <ul class="options flex">
+              <li>
+                <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-backward-step"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-regular fa-circle-play"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-forward-step"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+              </li>
+            </ul>
+           </div>
+
+
+           <div class="timeline flex">
+                 <h5>0.00</h5>
+                 <div class="line"></div>
+                 <h5>4.32</h5>
+           </div>
+        </div>
+
+
         
         
         
-        <div class="player-volume flex debug3">volume</div>
+        <div class="player-volume flex debug3">
+               <div>
+                <ul class="vo flex">
+                  <li>
+                    <a href="#"><i class="fa-solid fa-bars"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-desktop"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-solid fa-volume-high"></i></a>
+                  </li>
+                </ul>
+               </div>
+              
+               <div class="volume"></div>
+
+        </div>
   </div>
   
 </body>
