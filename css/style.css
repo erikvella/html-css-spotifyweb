@@ -10,18 +10,18 @@ font-family: 'PT Sans', sans-serif;
 
 .debug{
   background-color: rgb(20, 20, 20);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .debug2{
   background-color: rgb(91, 87, 115);
-  border: 1px solid rgb(206, 253, 15);
+  /* border: 1px solid rgb(206, 253, 15); */
 }
 
 
 .debug3{
-    background-color: rgb(209, 72, 72);
-    border: 1px solid rgb(0, 255, 94);
+    background-color: rgb(120, 120, 120);
+    /* border: 1px solid rgb(0, 255, 94); */
 }
 /* utility */
 
@@ -46,6 +46,9 @@ font-family: 'PT Sans', sans-serif;
   opacity: 1;
 }
 
+#active2{
+  border-bottom: 3px solid rgb(146, 248, 2);
+}
 
 /* stili generali degli elementi */
 
@@ -314,6 +317,7 @@ ul li a{
 .player-song , .player-volume{
   width: 230px;
   justify-content: space-around;
+  min-width: 230px;
 }
 .player-controls{
   width: 40%;
@@ -353,6 +357,11 @@ ul li a{
 
 /* qui vado a gestire gli effetti hover */
 
+
+#song-name:hover{
+  color: white;
+  text-decoration: underline;
+}
 a:hover{
   color: white;
 } 
@@ -390,6 +399,17 @@ color: white;
   color: white;
 }
 
+.album:hover{
+  opacity: .3;
+}
+.artist:hover{
+ opacity: .3;
+}
+
+
+
+
+
 
 /* da qui iniziano le media query */
 
@@ -420,7 +440,7 @@ color: white;
   .menu1 li .library{
     width: 50px;
     height: auto;
-    border-left: 3px solid rgb(146, 248, 2);
+    
     padding: 10px;
   }
 
@@ -431,6 +451,10 @@ color: white;
 .user-img{
   margin-left: 5px;
 }
-
+.btn{
+  text-align: right;
+  margin-right: 100px;
+  margin-top: 30px;
+}
   
 }
