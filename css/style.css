@@ -326,7 +326,7 @@ ul li a{
 .player-song , .player-volume{
   width: 230px;
   justify-content: space-around;
-  min-width: 230px;
+  
 }
 .player-controls{
   width: 40%;
@@ -370,7 +370,7 @@ ul li a{
   height: 5px;
   background-color: rgb(176, 176, 176) ;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .fa-circle-play{
