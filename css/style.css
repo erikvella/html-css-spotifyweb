@@ -83,7 +83,7 @@ h3, h2 , h4 , h5{
 
 .main-container{
 height: 100%;
-width: calc(100vw - 225px);
+width: calc(100% - 225px);
 overflow-y:auto;
 }
 
@@ -219,9 +219,18 @@ color: white;
 
 .box{
   overflow: hidden;
+  position: relative;
+}
+
+.fa-2xl{
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 50px;
 }
 .card , .card2{
-  width: 15%;
+  width: 150px;
+ 
 }
 
 .card2{
@@ -334,27 +343,46 @@ ul li a{
 
 .timeline{
   justify-content: space-around;
+  align-items: center;
 }
 .line{
   width: 80%;
-  border: 3px solid rgb(176, 176, 176);
-  height: 1px;
+  border-radius: 3px;
+  height: 5px;
+  background-color: rgb(176, 176, 176) ;
+  align-items: center;
+}
+
+.time{
+  width: 20%;
+  background-color: rgb(234, 232, 232);
+  height: 100%;
+  border-radius: 3px;
+  
 }
 .vo li{
   text-decoration: none;
   list-style: none;
-  
-  
 }
 .volume{
-  border: 3px solid rgb(176, 176, 176);
-  height: 1px;
-  width: 100px;
-  margin-right: 20px;
+  width: 60%;
+  border-radius: 3px;
+  height: 5px;
+  background-color: rgb(176, 176, 176) ;
+  align-items: center;
+  margin-right: 10px;
 }
 
-
-
+.fa-circle-play{
+  font-size: 2rem;
+  line-height: 15px;
+}
+.point{
+  height: 8px;
+  width: 8px;
+  background-color: white;
+  border-radius: 50%;
+}
 /* qui vado a gestire gli effetti hover */
 
 
@@ -406,10 +434,22 @@ color: white;
  opacity: .3;
 }
 
+.line:hover .time{
+  background-color:  rgb(146, 248, 2);
+}
 
+.volume:hover .time{
+  background-color:  rgb(146, 248, 2);
+}
 
+.fa-circle-play:hover{
+  scale: 1.1;
+}
 
-
+.box:hover .fa-2xl{
+  display: block;
+  scale: 2;
+}
 
 /* da qui iniziano le media query */
 
@@ -456,5 +496,16 @@ color: white;
   margin-right: 100px;
   margin-top: 30px;
 }
+
+
+.card , .card2{
+  width: 200px;
+ 
+}
+.fa-2xl{
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 75px;
   
 }
